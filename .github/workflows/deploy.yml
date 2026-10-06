@@ -41,9 +41,9 @@ jobs:
           rsync -a --exclude='*.html' public/ dist/
           touch dist/.nojekyll
         env:
-          VITE_BASE_PATH: /FinMonth/
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+         VITE_BASE_PATH: /FinMonth/
+         VITE_SUPABASE_URL: https://nidnqrosqefnjlmfgein.supabase.co
+         VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable_DJNMwXPx7d_NTm9ya6lyhA_wnq-Xn4X
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
