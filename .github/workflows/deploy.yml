@@ -37,6 +37,12 @@ jobs:
       - name: Build FinMonth App
         run: |
           npm run build
+          rm -rf dist/confirmar-email dist/historico dist/redefinir-senha
+          cp dist/index.html dist/404.html
+          mkdir -p dist/confirmar-email dist/historico dist/redefinir-senha
+          cp dist/index.html dist/confirmar-email/index.html
+          cp dist/index.html dist/historico/index.html
+          cp dist/index.html dist/redefinir-senha/index.html
           rsync -a --exclude='*.html' public/ dist/
           touch dist/.nojekyll
         env:
