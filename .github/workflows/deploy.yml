@@ -40,7 +40,7 @@ jobs:
           rsync -a --exclude='*.html' public/ dist/
           touch dist/.nojekyll
         env:
-         VITE_BASE_PATH: /FinMonth/
+         VITE_BASE_PATH: /finmonth/
          VITE_SUPABASE_URL: https://nidnqrosqefnjlmfgein.supabase.co
          VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable_DJNMwXPx7d_NTm9ya6lyhA_wnq-Xn4X
 
