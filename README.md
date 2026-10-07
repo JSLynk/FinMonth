@@ -1,2 +1,2 @@
 # FinMonth
-FinMonth — publicação GitHub Pages
+FinMonth — Controle de Contas Mensais
